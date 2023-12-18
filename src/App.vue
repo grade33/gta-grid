@@ -47,8 +47,8 @@ export default {
       if (this.dragging) {
         let x = event.clientX - this.start.x;
         let y = event.clientY - this.start.y;
-        x = Math.max(0, Math.min(x, this.grid.width - 3)); // ограничение по ширине сетки
-        y = Math.max(0, Math.min(y, this.grid.height - 3)); // ограничение по высоте сетки
+        x = Math.max(0, Math.min(x, this.grid.width)); // ограничение по ширине сетки
+        y = Math.max(0, Math.min(y, this.grid.height)); // ограничение по высоте сетки
         this.position = { x, y };
       }
     },
@@ -68,8 +68,8 @@ export default {
   justify-content: center;
 }
 .grid {
-  width: 320px;
-  height: 320px;
+  width: 323px;
+  height: 323px;
   position: relative;
   z-index: 1;
   border-radius: 30px;
