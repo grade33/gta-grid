@@ -3,8 +3,9 @@
     <div class="grid">
       <div v-for="index in 16" :key="index" class="cell"></div>
       <div
+        :draggable="false"
         class="handle"
-        @mousedown="dragStart"
+        @mousedown.prevent="dragStart"
         :style="{ top: `${position.y}px`, left: `${position.x}px` }"
       ></div>
     </div>
