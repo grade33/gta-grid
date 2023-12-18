@@ -1,4 +1,4 @@
-# gta-grid
+# Gta-Grid - https://grade33.github.io/gta-grid
 
 ## Project setup
 ```
@@ -19,6 +19,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
